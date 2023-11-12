@@ -1,0 +1,35 @@
+
+.calculadora {
+   
+   
+    padding: 15px;
+    border-radius: 30px;
+    color: white;
+    
+}
+
+.btnn{
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    border: none;
+    margin: 2px;
+}
+
+.btnn:hover {
+    background-color: rgb(85, 85, 231)
+}
+
+#painel{
+    background-color: white;
+    width: 217px;
+    height: 35px;
+    margin: 5px;
+    color: black;
+    text-align: right;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}

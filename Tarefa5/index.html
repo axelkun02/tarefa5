@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tarefa 5</title>
+        <link <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+            
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        
+        <h1>Exercício 1</h1>
+        <div class="container" id="divContainer">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="mb-3">
+                        <label class="form-label">Operações matématicas usando
+                            10 e 100 --></label>
+                        <button style="margin: 5px;" class="btn btn-primary"
+                            onclick="calc1()">Calcular</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+
+        <h1>Exercício 2</h1>
+        <div class="container" id="divContainer">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="mb-3">
+                        <label class="form-label">Exibir números entre 10 e 100 --></label>
+                        <button style="margin: 5px;" class="btn btn-primary"
+                            onclick="loop()">Exibir</button>
+                            <h3 id="resLoop" style="font-size:11px"> </h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        
+        
+        <h1>Exercício 3</h2>
+            <div class="container" id="divContainer">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <label class="form-label">Exibir tabuada do 5 --></label>
+                        <button style="margin: 5px;" class="btn btn-primary"
+                            onclick="tabuada()">Exibir</button>
+                            <h3 id="tabuada5" style="font-size:15px"> </h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+
+        <h1>Exercício 4</h2>
+            <div class="container" id="divContainer">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <label class="form-label">Exibir tabuada do </label>
+                            <input type="number" id="ipNumber" placeholder="digite um número...">
+                        <button style="margin: 5px;" class="btn btn-primary"
+                            onclick="tabuada2()">Exibir</button>
+                            <h3 id="tabuadaComp" style="font-size:15px"> </h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+
+        <h1>Exercício 5</h2>
+            
+
+        <div class="box">
+            <div class="calculadora">
+                
+                <p id="painel" style="border-color: black; border-style: solid";></p>
+                <table>
+                    <tr>
+                        <td><button div class="btnn" onclick="clean()">C</button></td>
+                        <td><button div class="btnn" onclick="back()"><</button></td>
+                        <td><button div class="btnn" onclick="insert('/')">/</button></td> 
+                        <td><button div class="btnn" onclick="insert('*')">X</button></td>
+                    </tr>
+                    <tr>
+                        <td><button div class="btnn" onclick="insert('7')">7</button></td>
+                        <td><button div class="btnn" onclick="insert('8')">8</button></td>
+                        <td><button div class="btnn" onclick="insert('9')">9</button></td>
+                        <td><button div class="btnn" onclick="insert('-')">-</button></td>
+                    </tr>
+                    <tr>
+                        <td><button div class="btnn" onclick="insert('4')">4</button></td>
+                        <td><button div class="btnn" onclick="insert('5')">5</button></td>
+                        <td><button div class="btnn" onclick="insert('6')">6</button></td>
+                        <td><button div class="btnn" onclick="insert('+')">+</button></td>
+                    </tr>
+                    <tr>
+                        <td><button div class="btnn" onclick="insert('1')">1</button></td>
+                        <td><button div class="btnn" onclick="insert('2')">2</button></td>
+                        <td><button div class="btnn" onclick="insert('3')">3</button></td>
+                        <td rowspan="2"><button div class="btnn" style="height: 106px; background-color: rgb(150, 150, 231);" onclick="calcular()">=</button></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><button div class="btnn" style="width: 106px;" onclick="insert('0')">0</button></td>
+                        <td><button div class="btnn" onclick="insert('.')">.</button></td>
+                       
+                    </tr>
+                </table>
+        
+            </div>
+        </div>
+        <hr>
+
+        <h1>Exercício 6</h2>
+            <div class="container" id="divContainer">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <label class="form-label">Exibir os números pares do array [1,2,3,4,5,6,7,8,9,10] ---> </label>
+                        <button style="margin: 5px;" class="btn btn-primary"
+                            onclick="pares()">Exibir</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+
+        <h1>Exercício 7</h2>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="mb-1">
+                        <label class="form-label">Custo de fábrica</label>
+                        <input class="form-control" id="custo" placeholder="Digite o número...">
+                    </div>
+                </div>
+               
+                <div class="col-md-3">
+                    <div class="mb-1">
+                        <label class="form-label">% do distribuidor</label>
+                        <input class="form-control" id="dist" placeholder="Digite o número...">
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="mb-1">
+                        <label class="form-label">% do impostos</label>
+                        <input class="form-control" id="impostos" placeholder="Digite o número...">
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <button class="btn btn-primary" style="margin-top: 30px;" onclick="carro()">
+                        Calcular</button>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6" style="margin: 20px;">
+                        <div class="mb-1">
+                            <label class="form-label">Valor total</label>
+                            <input class="form-control" id="valorFinal">
+                        </div>
+                </div>
+                 
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundleminjs"integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"crossorigin="anonymous"></script>
+
+<script>
+    
+    function calc1(){
+        let num1 = 10, num2 = 100, soma = num1+num2, sub = num1-num2, mult = num1*num2, div = num1/num2
+
+        alert("Soma: " + soma +  "\n" + "Subtração: " + sub + "\n" + "Multiplicação: " + mult + "\n" + "Divisão: " + div)
+    }
+
+    function loop(){
+        const resultado = document.querySelector('resLoop')
+        let array = []
+        let num1 = 10, num2 = 100
+
+        for (num1 ; num1 <= num2; num1++) {   	
+            array.push(num1)
+        }
+        
+        resLoop.textContent = array
+    }
+
+    function tabuada(){
+        const tab5 = document.querySelector('tabuada5')
+        let array = []
+        let num1 = 5, resultado 
+
+        for(let i = 1; i <= 10; i++){
+              
+              resultado = num1 + "X" + i + ": " + num1 * i + " "
+  
+              array.push(resultado)
+           
+        }
+        tabuada5.textContent = array
+     
+    }
+
+    function tabuada2(){
+        var num = document.getElementById("ipNumber").value
+        const tab5 = document.querySelector('tabuadaComp')
+        let array = []
+        let resultado 
+
+        for(let i = 1; i <= 10; i++){
+              
+              resultado = num + "X" + i + ": " + num * i + " "
+              array.push(resultado)
+           
+        }
+        tabuadaComp.textContent = array
+     
+    }
+
+    function pares(){
+        let array = [1,2,3,4,5,6,7,8,9,10], pares = []
+
+        for (let i = 0; i <array.length; i++) {
+            viz = array[i]
+            if(viz % 2 == 0 ) //se o resto da divisão for 0, é par
+            pares.push(viz)
+
+        }
+
+        alert("Os números pares do array são: " + "\n" + pares)
+    }
+
+    function carro(){
+
+// custo final = custo de fábrica + (custo de fábrica * percentual do distribuidor) + (custo de fábrica * percentual de impostos)
+
+// O usuário terá uma tela para entrar com os valores:
+
+// custo de fábrica => nome do input custoFabrica
+// % distribuidor => nome do input percDistribuidor
+// % impostos => nome do input percImpostos
+// Valor final => nome do input valorfinal
+// Deverá executar o cálculo e demonstrar o resultado no “valorfinal” quando clicar no botão “btncalcular”.
+
+let custoFabrica = Number.parseFloat(document.getElementById('custo').value)
+let percDistribuidor = Number.parseFloat(document.getElementById('dist').value)/100
+let percImpostos = Number.parseFloat(document.getElementById('impostos').value)/100
+let resultado =  parseFloat()
+
+
+resultado = custoFabrica + (custoFabrica*percImpostos) + (custoFabrica*percDistribuidor)
+document.getElementById("valorFinal").value = "R$" + resultado;
+
+
+}
+
+
+//funcões do exercicio 5 (calculadora)
+function insert(num) {
+    var numero = document.getElementById("painel").innerHTML;
+    document.getElementById("painel").innerHTML = numero + num;
+
+}
+
+function clean() {
+    document.getElementById("painel").innerHTML = ""
+}
+
+function back() {
+    var painel = document.getElementById("painel").innerHTML;
+    document.getElementById("painel").innerHTML = painel.substring(0, painel.length - 1);
+}
+
+function calcular() {
+    var painel = document.getElementById("painel").innerHTML;
+    if(painel) {
+        document.getElementById("painel").innerHTML = eval(painel);
+    } else if (painel == "") {
+        alert("Insira os números para realizar a operação")
+        
+    }
+
+}
+
+
+</script>
+
+</body>
+</html>
